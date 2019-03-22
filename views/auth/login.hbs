@@ -1,0 +1,15 @@
+<h1>Log In</h1>
+
+<form action="/login" method="POST" class="form">
+  <label>Username</label>
+  <input type="text" name="username" required />
+
+  <label>Password</label>
+  <input type="password" name="password" required />
+
+  {{#if errorMessage}}
+    <p class="error">{{errorMessage}}</p>
+  {{/if}}
+
+  <button type="submit">Access</button>
+</form>

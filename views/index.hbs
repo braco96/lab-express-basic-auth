@@ -1,0 +1,8 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+{{#if user}}
+  <p>You are logged in as <strong>{{user.username}}</strong>.</p>
+{{else}}
+  <p>Please sign up or log in to access the protected pages.</p>
+{{/if}}
